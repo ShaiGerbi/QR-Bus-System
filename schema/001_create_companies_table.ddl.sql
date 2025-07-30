@@ -1,0 +1,13 @@
+DROP TABLE IF EXISTS companies;
+
+CREATE TABLE companies(
+  company_id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+  company_name VARCHAR(64) UNIQUE NOT NULL,
+  company_number VARCHAR(16) UNIQUE NOT NULL,
+  website VARCHAR(64),
+  phone_number VARCHAR(15) NOT NULL,
+  email VARCHAR(64),
+  address VARCHAR(64) NOT NULL,
+  city VARCHAR(32) NOT NULL,
+  is_active BOOLEAN NOT NULL DEFAULT TRUE
+);
