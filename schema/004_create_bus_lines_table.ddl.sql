@@ -1,0 +1,7 @@
+DROP TABLE IF EXISTS bus_lines;
+
+CREATE TABLE bus_lines(
+  line_id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+  line_number VARCHAR(6) NOT NULL,
+  line_name VARCHAR(32)
+);
